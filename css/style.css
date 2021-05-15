@@ -1,6 +1,55 @@
+  @font-face {
+    font-family: "inter_extralight";
+    src: url("../font/Inter/static/Inter-ExtraLight.ttf") format("woff"), url("Inter-ExtraLight.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  @font-face {
+    font-family: "inter_light";
+    src: url("../font/Inter/static/Inter-Light.ttf") format("ttf"), url("Inter-Light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "inter_medium";
+    src: url("../font/Inter/static/Inter-Medium.ttf") format("woff"), url("Inter-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "inter_regular";
+    src: url("../font/Inter/static/Inter-Regular.ttf") format("woff"), url("Inter-Regular.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
 @media (max-width: 768px) {
     .investment-graph img {
         width: 100%;
+    }
+    .detail-img-stock-sm {
+        display: block;
+    }
+    .detail-img-stock-md {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .detail-img-stock-sm {
+        display: none;
+    }
+    .detail-img-stock-md {
+        display: block;
     }
 }
 body::-webkit-scrollbar {
@@ -17,7 +66,12 @@ body::-webkit-scrollbar {
     border: 1px solid #ccc;
   }
 body {
+    font-family: inter_regular;
     font-size: 14px;
+    color: #4F4F4F;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #212832;
 }
 button {
     font-size: 14px !important;
@@ -179,6 +233,7 @@ button {
 }
 .verified-property .mask-text h4 {
     font-size: 3.5vw;
+    color: #ffffff;
 }
 .verified-property .mask-text p {
     font-size: 1.5vw;
@@ -193,6 +248,9 @@ button {
 }
 .margin-bottom-20 {
     margin-bottom: 20px;
+}
+.padding-bottom-20 {
+    padding-bottom: 20px;
 }
 .social-handle {
     background-color: #0A811B;
@@ -230,7 +288,7 @@ button {
     font-size: 20px;
     cursor: pointer;
 }
-.detail-img-stock img {
+.detail-img-stock-md img {
     width: 100%;
     height: 100%;
 }
@@ -414,4 +472,13 @@ h4.center-border-head {
 }
 .login-form {
     margin-bottom: 4em;
+}
+.height-60 {
+    height: 60vh;
+}
+.height-40 {
+    height: 40vh;
+}
+.height-20 {
+    height: 20vh;
 }
